@@ -1,0 +1,464 @@
+@import "vars";
+@import "fonts";
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+::placeholder {
+	color: #8081ab;
+	font-weight: 300;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+html {
+	font-size: 16px;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	min-width: 320px;
+	position: relative;
+	line-height: 1.5;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 4.5em;
+	margin: 0;
+	font-weight: 700;
+	color: #fff;
+	line-height: 5.4rem;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 600;
+	border: 1px solid #fff;
+	padding: 12px 26px;
+}
+
+.overlay {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+header {
+
+
+	.overlay {
+		.header-top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.header-about {
+				font-size: 12px;
+				max-width: 170px;
+			}
+
+			.header-social {
+				display: flex;
+				margin-top: 11px;
+
+				.social-btn {
+					display: flex;
+					width: 34px;
+					height: 34px;
+					border-radius: 50%;
+					margin-left: 13px;
+					background-color: #527298;
+					justify-content: center;
+					align-items: center;
+					text-decoration: none;
+
+					.fab {
+						color: #fff;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
+		.header-nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 5px;
+			margin-bottom: 10px;
+
+			.logo {
+				a {
+					font-family: 'Comfortaa', sans-serif;
+					text-decoration: none;
+					color: $text;
+					font-weight: 700;
+					font-size: 24px;
+					line-height: 1.2;
+					vertical-align: top;
+				}
+			}
+
+			nav {
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style: none;
+					display: flex;
+
+
+					li {
+						margin-left: 41px;
+
+						a {
+							display: inline-block;
+							text-decoration: none;
+							color: $text;
+							padding: 8px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.header-main {
+		background-image: url(../img/tables.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		max-height: 500px;
+		width: 100%;
+		box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.3) inset;
+
+		.overlay {
+			h1 {
+				padding-top: 90px;
+			}
+
+			p {
+				color: #fff;
+				max-width: 380px;
+				line-height: 1.5rem;
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+
+			.btn {
+				margin-bottom: 186px;
+			}
+		}
+	}
+}
+
+main {
+	.overlay {
+		position: relative;
+
+		.main-layout {
+			margin-top: 74px;
+			margin-bottom: 74px;
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			height: 645px;
+
+			.vertical-container {
+				position: relative;
+				height: 100%;
+				width: calc((100% - 60px)/3);
+				margin-right: 30px;
+				display: flex;
+				flex-direction: column;
+
+				.main-about {
+					padding: 0;
+					background-color: none;
+					position: relative;
+					box-shadow: none;
+
+					h2 {
+						color: $text;
+						margin-bottom: 30px;
+					}
+
+					p {
+						color: $text;
+						max-width: 100%;
+					}
+				}
+
+				article {
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					height: 100%;
+					background-position: center center;
+					background-size: cover;
+					background-repeat: no-repeat;
+					box-shadow: 0 0 0 350px rgba(0, 0, 0, 0.3) inset;
+					padding: 30px;
+					// margin-bottom: 30px;
+
+					h2 {
+						// margin-top: auto;
+						color: #fff;
+						font-size: 2.75em;
+						margin-bottom: 20px;
+						line-height: 1em;
+					}
+
+					p {
+						max-width: 250px;
+						color: #fff;
+						line-height: 1.4rem;
+						font-weight: 400;
+					}
+				}
+
+				&:nth-child(2n-1) {
+					article {
+
+
+						&:nth-child(1) {
+							flex-basis: 30%;
+
+
+						}
+
+						&:nth-child(2) {
+							flex-basis: 65%;
+							margin-top: 30px;
+						}
+
+					}
+				}
+
+				&:nth-child(3) {
+					margin-right: 0;
+
+					article {
+
+
+						&:nth-child(1) {
+							flex-basis: 65%;
+
+
+						}
+
+						&:nth-child(2) {
+							flex-basis: 30%;
+							margin-top: 30px;
+						}
+
+					}
+				}
+
+
+
+
+			}
+
+		}
+	}
+
+	.about-coffee {
+		background-image: url(../img/barista.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		max-height: 500px;
+		width: 100%;
+		box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.3) inset;
+
+		.overlay {
+			h1 {
+				padding-top: 60px;
+			}
+
+			p {
+				color: #fff;
+				max-width: 380px;
+				line-height: 1.5rem;
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+
+			.btn {
+				margin-bottom: 135px;
+			}
+		}
+
+	}
+}
+
+footer {
+	height: 115px;
+	font-family: 'Comfortaa', sans-serif;
+	color: #1B1B1B;
+
+	.overlay {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 40px;
+
+		.footer-social {
+			.social {
+				display: inline-block;
+				margin-left: 20px;
+				text-decoration: none;
+				color: #1B1B1B;
+
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
+
+
+//article 
+.article-main {
+	.head {
+		position: relative;
+		display: flex;
+		justify-content: flex-end;
+
+		.head-text {
+			position: absolute;
+			left: 0;
+			top: 20%;
+
+			h1 {
+				color: $text;
+				margin-bottom: 15px;
+			}
+
+			p {
+				max-width: 350px;
+				line-height: 1.5rem;
+			}
+		}
+
+
+
+		img {
+			height: 500px;
+			width: 755px;
+		}
+	}
+
+	.atricle-inside {
+		width: 746px;
+		margin: 88px auto;
+
+		h2 {
+			font-size: 2.5rem;
+			line-height: 3rem;
+			margin-bottom: 25px;
+		}
+
+		p {
+			font-size: 1.125rem;
+			line-height: 2rem;
+			margin-bottom: 40px;
+		}
+
+		.conclusion {
+			padding-top: 50px;
+			position: relative;
+
+			&:before {
+				content: '';
+				background-image: url(../img/ellipsis-h-solid.svg);
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+				height: 8px;
+				width: 25px;
+				display: inline-block;
+
+				position: absolute;
+				top: 0;
+				right: 50%;
+
+			}
+		}
+	}
+
+	.other-articles {
+		display: flex;
+		position: relative;
+		height: 350px;
+
+		.article-item {
+			width: calc((100% - 60px)/3);
+			margin-right: 30px;
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			height: 100%;
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			box-shadow: 0 0 0 350px rgba(0, 0, 0, 0.3) inset;
+			padding: 30px;
+
+
+			h2 {
+				color: #fff;
+				font-size: 2.75em;
+				margin-bottom: 20px;
+				line-height: 1em;
+			}
+
+			p {
+				max-width: 250px;
+				color: #fff;
+				line-height: 1.4rem;
+				font-weight: 400;
+			}
+
+			&:nth-child(2) {
+				background-image: url(../img/1.jpg);
+			}
+
+			&:first-child {
+				background-image: url(../img/latt.jpg);
+			}
+
+			&:last-child {
+				margin-right: 0;
+				background-image: url(../img/barista.jpg);
+			}
+		}
+	}
+}
+
+
+
+@import "media"; // Always at the end

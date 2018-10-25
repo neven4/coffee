@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("OpenSans", "../fonts/OpenSansRegular/OpenSansRegular");
+@include font-face("OpenSans", "../fonts/OpenSansBold/OpenSansBold", 700);
+@include font-face("OpenSans", "../fonts/OpenSansSemiBold/OpenSansSemiBold", 600);
+@include font-face("Comfortaa", "../fonts/ComfortaaBold/ComfortaaBold", 700);
